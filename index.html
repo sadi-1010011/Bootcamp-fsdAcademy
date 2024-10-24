@@ -6,7 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- dependencies -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-	<title>foodstagram - Home</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<title>Bazaaro</title>
 	<style type="text/css">
 
 /* !IMPORTANT STYLES */
@@ -33,57 +35,68 @@ body { background-color: black; } /* #3b4b5ccc; } */
 
 <!-- HEADER -->
 
-<!-- <header class="header-gradient">
-	<div class="row p-3 text-center">
-		<div class="col-sm-6 col-md-6 col-lg-3">
-			<h2 class="navbar-brand">
-				<a class="brand-title" href="index.html">foodstagram</a>
-			</h2>
-		</div>
-
-		<div class="col-sm-4 col-md-4 col-lg-6">
-			<nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    	<span class="navbar-toggler-icon"></span>
-					</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav m-auto">
-					  <li class="nav-item active">
-					    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="products.html">products</a>
-					  </li>
-						  <li class="nav-item">
-					    <a class="nav-link" href="about.html">about</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="contact.html">contact</a>
-					  </li>
-					</ul>
+<header class="container-fluid">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="nav-logo" href="#"><img src="./logo.png" alt="Logo"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav mx-auto mb-2 mb-lg-0" id="a">
+					<a class="nav-link active me-3" aria-current="page" href="home.html">HOME</a>
+					<a class="nav-link me-3" href="#about">ABOUT</a>
+					<a class="nav-link me-3" href="#products">PRODUCTS</a>
+					<a class="nav-link me-3" href="#recipies">RECIPES</a>
+					<a class="nav-link me-3" href="#partner">PARTNER WITH US</a>
+					<a class="nav-link me-3" href="#team">OUR TEAM</a>
+					<a class="nav-link me-3" href="#contact">CONTACTS</a>
 				</div>
-			</nav>
+			</div>
 		</div>
-
-		<div class="col-3 icons-wrapper">
-			<div class="basket-wrapper">
-				<div class="daynight-btn" onClick="darklightToggle();">
-					<img src="img/lightbulb.svg" alt="cart">
-				</div>
-				<div class="basket-btn">
-					<a href="products.html">
-						<img src="img/basket.png" alt="cart">
-						<div class="basket-count">
-							<span id="basketCount">0</span>
-						</div>
-					</a>
+	</nav>
+</header>
+<!-- Video Section -->
+<section> 
+	<video src="homevid.mp4" autoplay muted loop playsinline disablePictureInPicture></video>
+</section>
+<!-- About Section -->
+<section id="about" class="container my-5">
+	<h1 class="text-center mb-4">About Us</h1>
+	<div class="row align-items-center">
+		<div class="col-md-6">
+			<h2>Welcome to Bazaaro!</h2>
+			<p>We offer innovative products and delicious recipes to enhance your lifestyle and inspire every meal.</p>
+			<p>Our products are designed for quality and simplicity, while our recipes focus on fresh ingredients and easy-to-follow steps. We value sustainability, community, and creating meaningful moments whether it’s with the perfect product or a flavorful dish.</p>
+			<p>Explore, create, and enjoy with us!</p>
+		</div>
+		<div class="col-md-6">
+			<div class="flip-card" id="flipCard">
+				<div class="flip-card-inner" id="flipCardInner">
+					<div class="flip-card-front">
+						<img src="about1.jpg" alt="About Us Image 1" class="img-fluid rounded">
+					</div>
+					<div class="flip-card-back">
+						<img src="about2.jpg" alt="About Us Image 2" class="img-fluid rounded">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</header> -->
+</section>
 
-<!-- PRODUCTS - DISABLED IN PRODUCTION -->
+<script src="https://kit.fontawesome.com/afbea1b48a.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script>
+	const flipCardInner = document.getElementById('flipCardInner');
+	setInterval(() => {
+		flipCardInner.classList.toggle('flip-animation');
+	}, 3000); 
+</script>
+
 
 <section class="products-section">
 	<h1 class="text-center p-4">Products</h1>
@@ -167,23 +180,6 @@ body { background-color: black; } /* #3b4b5ccc; } */
 		</form>
 	</div>
 </div>
-<!-- <footer class="footer-wrapper">
-	<div class="container">
-		<div class="row text-white p-3">
-			<div class="col-9">
-				<span>copyright &copy2022</span>
-			</div>
-			<div class="col-3 text-center">
-				<span class="socialmedia-icon">
-					<img src="img/facebook.png" alt="@fb">
-				</span>
-				<span class="socialmedia-icon">
-					<img src="img/instagram.png" alt="@insta">
-				</span>
-			</div>
-		</div>
-	</div>
-</footer> -->
 
 <!-- DYNAMIC PRODUCTS DISABLED FOR DEVELOPMENT STAGE EFFICIENCY -->
 <script src="script.js"></script>
