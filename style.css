@@ -1,0 +1,369 @@
+/* GENERAL */
+
+* { box-sizing: border-box; }
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: sans-serif, roboto, arial, cambria;
+	line-height: 1.2;
+	background-color: black;
+}
+
+a {
+	color: black!important;
+}
+
+a:hover {
+	font-weight: bold;
+	transition: 0.24s ;
+	color: lightgrey;
+	text-decoration: none !important;
+}
+
+
+/* HEADER */
+
+.header-gradient {
+	color: black;
+	background-color: rgb(224, 224, 224);
+	/* background-image: linear-gradient(315deg, #485461 0%, #28313b 74%); */
+}
+
+.brand-title {
+	color: black;
+	font-size: 1.6rem;
+}
+
+.basket-wrapper {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.daynight-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	margin: 0 6px;
+	padding: 0 5px;
+	color: white;
+	/*background-color: white;*/
+	/*border: 2px solid lightgrey;*/
+	transition: 0.23s;
+}
+
+.daynight-btn > img {
+	width: 1rem;
+	height: auto;
+}
+
+.basket-btn {
+	position: relative;
+	display: inline-block;
+	border-radius: 6px;
+	margin: 0 6px;
+	transition: 0.23s;
+}
+
+.basket-btn > img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.basket-count {
+	position: absolute;
+	top: -1px;
+	right: -12px;
+	color: white;
+	background-color: grey;
+	width: 23px;
+	height: 23px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: 500;
+	border-radius: 50%;
+	border: 1px solid grey;
+}
+
+/* PRODUCT SECTION */
+
+.products-section {
+	background-color: #fff;
+	padding: 4rem 0;
+	/* background-image: linear-gradient(315deg, #485461 0%, #28313b 74%); */
+}
+
+#productslist, #recipieslist {
+	height: 200vh;
+	overflow: scroll;
+}
+
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+	color: black;
+	/* background-color: rgb(224, 224, 224); */
+	margin: 1.5rem 0;
+	padding: 0 0.7rem;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: 0.6s;
+	/*box-shadow: 1px 1px 1px 0px grey;*/
+}
+
+.product-card:nth-child() {
+	background-color: rgb(224, 224, 224);
+}
+
+.product-card:hover {
+	background-color: #d9dbddcc;
+	box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+.product-image {
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	border-bottom-left-radius: 22px;
+	border-bottom-right-radius: 6px;
+}
+
+.product-title {
+	text-transform: capitalize;
+	padding: 1.8rem 0 0rem 0;
+	text-overflow: ellipsis;
+	padding: 0.4rem;
+}
+
+.product-preptime::before {
+	content: 'Prep time: ';
+	font-weight: normal;
+}
+
+.product-calories::before {
+	content: 'Calories: ';
+	font-weight: normal;
+}
+
+.product-rating::before {
+	content: 'Cuisine: ';
+	font-weight: normal;
+}
+
+.product-rating::before {
+	content: 'Rating: ';
+	font-weight: normal;
+}
+.product-rating, .product-difficulty, .product-cooktime, .product-cuisine, .product-calories, .product-preptime {
+	padding: 1.8rem 0 0rem 0;
+	padding: 0.4rem;
+	font-weight: 500;
+	font-size: 1.22rem;
+}
+
+.product-difficulty::before {
+	content: 'Difficulty: ';
+	font-weight: normal;
+}
+
+.product-cooktime::before {
+	content: 'Cook time: ';
+	font-weight: normal;
+}
+
+.product-description {
+	margin: 0;
+	color: rgb(98, 98, 98);
+	line-height: 1.2;
+	text-overflow: ellipsis;
+}
+
+.product-price {
+	color: orange;
+	font-size: 1.2rem;
+	display: block;
+	padding-top: 0.5rem;
+	padding-bottom: 0.4rem;
+	font-weight: 500;
+}
+
+/* .product-price:after {
+	content: '$';
+} */
+
+.buy-btn {
+	color: white;
+	background-color: #3b4e5ccc;
+	text-transform: capitalize;
+	border: none;
+	border-radius: 18px;
+	margin: 0.42rem 0 1.6rem 0;
+	padding: 6px 2rem;
+	transition: 0.3s;
+}
+
+.buy-btn:hover {
+	color: #fff;
+	background-color: orange;
+}
+
+.buy-btn:active {
+	color: grey;
+	background-color: #fcefee;
+}
+
+/* FOOTER */
+
+#footer{
+    height: 300px;
+    background-color: black;
+    color: white;
+}
+.contact{
+    float: left;
+    margin-left: 5%;
+    width: 430px;
+  
+    
+}
+#message{
+    height: 80px;
+    border-radius: 10px;
+    width: 200px;
+    
+}
+#contact_form input{
+    height: 24px;
+    width: 200px;
+    border-radius: 5%;
+}
+.description{
+    float: left;
+    margin-left: 4%;
+}
+.popular_links{
+    float: left;
+    margin-left: 5%;
+}
+
+.description_data{
+    width: 250px;
+    height: 100px;
+   
+}
+.get_in_touch{
+    float: left;
+    margin-left: 5%;
+}
+
+.form1{
+    float: left;
+   margin-right: 3%;
+    
+}
+#contact_form #send{
+    width:100px;
+    border-radius: 10px;
+    
+}
+
+
+/* POPUP MODAAL */
+
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: scroll!important; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	position: absolute;
+	background-color: #fefefe;
+	margin: 5% 10%;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%!important;
+  }
+
+  #dynamicRecipyDetails {
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	overflow-y: scroll;
+  }
+
+  .rcp-image {
+	width: 46%;
+	height: auto;
+  }
+
+  .rcp-title {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 3rem;
+  }
+
+  .rcp-steps {
+	font-size: 1.26rem;
+	text-align: left;
+	padding: 3px 0;
+  }
+
+
+
+  .rcpinfo-container, .rcpinstructions, .rcpingredients {
+	min-width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 0;
+	gap: 6px;
+  }
+
+  .rcpinstructions-container, .rcpingredients-container {
+	margin: 2rem auto;
+  }
+
+
+  
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
