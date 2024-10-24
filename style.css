@@ -31,6 +31,85 @@ a:hover {
 
 /* HEADER */
 
+.navbar {
+    padding: 15px 0;
+    background-color: white; 
+    height: 100px;
+    overflow: hidden;
+}
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 8px 15px;
+}
+.navbar-nav .nav-link:hover {
+    color: #fcb273;
+}
+.nav-logo img {
+    height: 250px; 
+    width: 230px;   
+}
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+#about {
+    padding: 50px 0;
+}
+#about .col-md-6 {
+    padding: 15px;
+}
+#about h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: black;
+}
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-front img, .flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+.flip-animation {
+    transform: rotateY(180deg);
+}
+
+
+
 .header-gradient {
 	color: black;
 	background-color: rgb(224, 224, 224);
