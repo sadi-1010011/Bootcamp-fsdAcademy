@@ -9,6 +9,211 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<title>Bazaaro</title>
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Chewy&family=Delius+Swash+Caps&family=Delius+Unicase:wght@400;700&family=DynaPuff:wght@400..700&family=Orbitron:wght@400..900&family=Tangerine:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Chewy&family=Delius+Swash+Caps&family=Delius+Unicase:wght@400;700&family=DynaPuff:wght@400..700&family=Orbitron:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Delius+Swash+Caps&family=Delius+Unicase:wght@400;700&family=DynaPuff:wght@400..700&display=swap');
+	</style>
+	<style>
+
+/* PARTNER WITH US CSS */
+***css***
+
+
+.we{
+    height:500px
+}
+/* .parti{
+    width: 250px;
+    height:180px;
+    
+    margin-left: 7%;
+    margin-top: 8%;
+    box-shadow: #00000040 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.partii{
+    width: 250px;
+    height:180px;
+   
+    margin-left: 7%;
+    margin-top: 5%;
+    box-shadow: #00000040 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+} */
+.waviy {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 36%;
+  }
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 33px;
+    color: #000000;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+ 
+
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+  
+  .subh{
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+
+
+  .item{
+    box-shadow: 
+        inset var(--itemWidthMinus) var(--itemWidthMinus) 0 rgb(255, 250, 250), 
+        inset var(--itemWidth) var(--itemWidthMinus) 0 rgb(224, 105, 40), 
+        inset var(--itemWidthMinus) var(--itemWidth) 0 rgb(255, 47, 0), 
+        inset var(--itemWidth) var(--itemWidth) 0 rgb(248, 101, 27),
+        0 0 20px silver;
+    transition: box-shadow ease-in-out .6s, color ease-in-out .5s;  
+    width: 250px;
+    height:180px;
+    text-align: center;
+    background: center/50%  no-repeat;
+    cursor: pointer;
+    display: grid;
+    color: rgb(20, 19, 19);
+    
+    grid-row:  2 / 3;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    padding-top: 20%;
+    font-size: 20px;
+
+}
+ .item:hover{
+    box-shadow: 
+        inset 0 0 0 transparent, 
+        inset 0 0 0 transparent, 
+        inset 0 0 0 transparent, 
+        inset 0 0 0 transparent, 
+        0 0 20px silver;
+    color: transparent;
+} 
+section{
+     text-align: center;
+    --itemWidth: min(250px, 30vw);
+    --itemWidthMinus: calc(-1 * var(--itemWidth));
+    height: max-content;
+    width: 250px;
+    display: grid;
+    grid-template-rows: repeat(0, max-content);
+    grid-template-columns: repeat(3, calc(3vw + var(--itemWidth)));
+    font-family: 'Averia Serif Libre';
+    margin-top: 23%;
+    margin-left:70%
+
+}
+.item:first-of-type{
+    background-image: url(./images/img1.png);
+}
+.item:nth-of-type(2){
+    background-image: url(./images/img2.jpeg);
+}
+.item:nth-of-type(3){
+    background-image: url(./images/img3.jpeg);
+}
+.item:nth-of-type(4){
+    background-image: url(./images/img4.jpeg);
+    padding-top: 24%;
+}
+
+.item > span {
+    width: 100%;
+    user-select: none; -moz-user-select: none; -webkit-user-select: none;
+}
+
+
+
+
+
+
+
+
+
+.items{
+    box-shadow: 
+        inset var(--itemWidthMinus) var(--itemWidthMinus) 0 rgb(255, 250, 250), 
+        inset var(--itemWidth) var(--itemWidthMinus) 0 rgb(224, 105, 40), 
+        inset var(--itemWidthMinus) var(--itemWidth) 0 rgb(255, 47, 0), 
+        inset var(--itemWidth) var(--itemWidth) 0 rgb(248, 101, 27), 
+        0 0 20px silver;
+    transition: box-shadow ease-in-out .6s, color ease-in-out .5s;  
+    width: 250px;
+    height:180px;
+    text-align: center;
+    background: center/50%  no-repeat;
+    cursor: pointer;
+    display: grid;
+    color: rgb(20, 19, 19);
+    font-size: calc(var(--itemWidth) / 7);
+    grid-row:  2/ 3;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    padding-top: 20%;
+    font-size: 20px;
+
+}
+ .items:hover{
+    box-shadow: 
+        inset 0 0 0 transparent, 
+        inset 0 0 0 transparent, 
+        inset 0 0 0 transparent, 
+        inset 0 0 0 transparent, 
+        0 0 20px silver;
+    color: transparent;
+} 
+.section2{
+     text-align: center;
+    --itemWidth: min(250px, 30vw);
+    --itemWidthMinus: calc(-1 * var(--itemWidth));
+    height: max-content;
+    width: 250px;
+    display: grid;
+    grid-template-rows: repeat(0, max-content);
+    grid-template-columns: repeat(3, calc(3vw + var(--itemWidth)));
+    font-family: 'Averia Serif Libre';
+    margin-top: 330px;
+    margin-left:-30%
+
+}
+.items:first-of-type{
+    background-image: url(./images/img5.jpeg);
+}
+.items:nth-of-type(2){
+    background-image: url(./images/img6.jpeg);
+}
+.items:nth-of-type(3){
+    background-image: url(./images/img7.jpeg);
+}
+.items:nth-of-type(4){
+    background-image: url(./images/img8.jpeg);
+    padding-top: 24%;
+}
+
+.items > span {
+    width: 100%;
+    user-select: none; -moz-user-select: none; -webkit-user-select: none;
+}
+
+
+
+	</style>
 	<style type="text/css">
 
 /* !IMPORTANT STYLES */
@@ -98,6 +303,9 @@ body { background-color: black; } /* #3b4b5ccc; } */
 </script>
 
 
+<!-- Products  -->
+
+
 <section class="products-section">
 	<h1 class="text-center p-4">Products</h1>
 	<div class="container m-auto" id="productslist">
@@ -124,6 +332,62 @@ body { background-color: black; } /* #3b4b5ccc; } */
 		</div>
 	</div>
 </section>
+
+
+
+<!-- partner with us -->
+
+<div class="container-fluid we">
+    <div class="waviy">
+        <span style="--i:1">O</span>
+        <span style="--i:2">U</span>
+        <span style="--i:3">R</span>
+        <span style="margin-left:2%; --i:4">P</span>
+        <span style="--i:5">A</span>
+        <span style="--i:6">R</span>
+        <span style="--i:7">T</span>
+        <span style="--i:8">I</span>
+        <span style="--i:8">C</span>
+        <span style="--i:8">I</span>
+        <span style="--i:8">P</span>
+        <span style="--i:8">A</span>
+        <span style="--i:8">N</span>
+        <span style="--i:8">T</span>
+        <span style="--i:8">S</span>
+       </div>
+       <h2 class="subh" style="text-align: center;margin-top: 2%;color: gray;">Together, We Build the Future</h2>
+    <div class="d-flex justfy-content-center">
+        <div class="">
+            <section>
+                
+                <div class=item><span>AVERY DAVIS</span></div>
+                <div class=item><span>RIMBERIO</span></div>
+                <div class=item><span>LARANA</span></div>
+                <div class=item><span>TRAVEL</span></div>
+               
+
+                
+            </section>
+
+        </div>
+       
+     <div class="d-flex justfy-content-center">
+        <div class=" partii">
+            
+                <div class="section2">
+                
+                    <div class=items><span>MAMA'S KITCHEN</span></div>
+                    <div class=items><span>CHIAKI SATO</span></div>
+                    <div class=items><span>FAUGET SNEAKERS</span></div>
+                    <div class=items><span>HANOVER</span></div>
+    
+                </div>   
+          
+        </div> 
+
+    </div>
+   </div>
+
 
 <!-- FOOTER -->
 
